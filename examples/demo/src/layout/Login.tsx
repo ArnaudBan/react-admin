@@ -12,6 +12,7 @@ import TextField from '@material-ui/core/TextField';
 import { createMuiTheme, makeStyles } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import LockIcon from '@material-ui/icons/Lock';
+import logo from './logo.svg';
 
 import { Notification } from 'react-admin';
 import { useTranslate, useLogin, useNotify } from 'ra-core';
@@ -24,12 +25,15 @@ const useStyles = makeStyles(theme => ({
         minHeight: '100vh',
         alignItems: 'center',
         justifyContent: 'flex-start',
-        background: 'linear-gradient(to top, #4e4376, #2b5876)',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
+        background:
+            'linear-gradient(to bottom, #00023b 0%, #00023b 35%, #e8e8e8 35%, #e8e8e8 100%)',
     },
     card: {
         minWidth: 300,
+        marginTop: '2em',
+    },
+    logo: {
+        maxWidth: 150,
         marginTop: '6em',
     },
     avatar: {
@@ -121,6 +125,11 @@ const Login = () => {
             render={({ handleSubmit }) => (
                 <form onSubmit={handleSubmit} noValidate>
                     <div className={classes.main}>
+                        <img
+                            className={classes.logo}
+                            alt="react admin logo"
+                            src={logo}
+                        />
                         <Card className={classes.card}>
                             <div className={classes.avatar}>
                                 <Avatar className={classes.icon}>
