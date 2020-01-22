@@ -26,7 +26,7 @@ const useStyles = makeStyles(theme => ({
         alignItems: 'center',
         justifyContent: 'flex-start',
         background:
-            'linear-gradient(to bottom, #00023b 0%, #00023b 35%, #e8e8e8 35%, #e8e8e8 100%)',
+            'linear-gradient(135deg, #00023b 0%, #00023b 50%, #313264 100%)',
     },
     card: {
         minWidth: 300,
