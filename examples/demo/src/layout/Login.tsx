@@ -24,7 +24,7 @@ const useStyles = makeStyles(theme => ({
         minHeight: '100vh',
         alignItems: 'center',
         justifyContent: 'flex-start',
-        background: 'url(https://source.unsplash.com/random/1600x900)',
+        background: 'linear-gradient(to top, #4e4376, #2b5876)',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
     },
